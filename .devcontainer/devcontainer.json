@@ -20,10 +20,12 @@
 
 	"mounts": [
 		"type=volume,source=vscode-mongodb-devcontainer,destination=/data/db"
-	]
+	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+	"forwardPorts": [
+		27017
+	],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "yarn install",
